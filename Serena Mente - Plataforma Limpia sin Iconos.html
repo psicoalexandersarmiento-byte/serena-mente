@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serena Mente — Orientación Psicológica Virtual</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        serena: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            900: '#064e3b',
+                            light: '#e0f2fe',
+                            blue: '#0284c7',
+                            darkblue: '#0369a1'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="text-xl font-bold bg-gradient-to-r from-serena-700 to-serena-blue bg-clip-text text-transparent">Serena Mente</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-600">
+                <a href="#inicio" class="hover:text-serena-600 transition">Inicio</a>
+                <a href="#nosotros" class="hover:text-serena-600 transition">¿Cómo Funciona?</a>
+                <a href="#psicologos" class="hover:text-serena-600 transition">Nuestros Especialistas</a>
+                <a href="#tarifas" class="hover:text-serena-600 transition">Tarifas</a>
+                <a href="#testimonios" class="hover:text-serena-600 transition">Reseñas y Calificaciones</a>
+            </nav>
+            <div>
+                <a href="#psicologos" class="bg-serena-600 hover:bg-serena-700 text-white font-medium px-5 py-2.5 rounded-full shadow-md shadow-serena-600/20 transition text-sm">
+                    Agendar Cita
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative overflow-hidden bg-gradient-to-b from-serena-50 via-sky-50/50 to-white py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center bg-serena-100 text-serena-700 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                        <span>Atención Psicológica Profesional y Segura</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                        Tu espacio seguro para el <span class="bg-gradient-to-r from-serena-600 to-serena-blue bg-clip-text text-transparent">bienestar emocional</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        Orientación psicológica virtual accesible con profesionales expertos. Sesiones 100% confidenciales a través de Google Meet para acompañarte en tu proceso de crecimiento.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#psicologos" class="w-full sm:w-auto bg-serena-600 hover:bg-serena-700 text-white font-semibold px-8 py-3.5 rounded-xl shadow-lg shadow-serena-600/25 transition text-center">
+                            Conoce a los Especialistas
+                        </a>
+                        <a href="#nosotros" class="w-full sm:w-auto bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 font-semibold px-8 py-3.5 rounded-xl transition text-center shadow-sm">
+                            ¿Cómo funciona?
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-center lg:justify-start space-x-6 pt-6 text-sm text-slate-500 font-medium">
+                        <div>Pago previo seguro</div>
+                        <div>•</div>
+                        <div>Videollamada Meet</div>
+                    </div>
+                </div>
+                <div class="relative flex justify-center">
+                    <div class="relative w-full max-w-md bg-white rounded-3xl p-6 shadow-xl border border-slate-100">
+                        <div class="inline-block bg-serena-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                            Tarifa Única $80.000 COP
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-slate-50 p-4 rounded-2xl">
+                                <h4 class="font-bold text-slate-800">Equipo Especializado</h4>
+                                <p class="text-xs text-slate-500 mt-1">Terapia Cognitivo-Conductual, Jurídica y Organizacional</p>
+                            </div>
+                            <div class="p-4 bg-sky-50 rounded-2xl border border-sky-100">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-xs font-bold text-sky-800 uppercase">Consulta Individual</span>
+                                    <span class="text-sm font-extrabold text-sky-900">$80.000 COP</span>
+                                </div>
+                                <p class="text-xs text-slate-600">Incluye sesión virtual guiada de 50 minutos más espacio de valoración y seguimiento.</p>
+                            </div>
+                            <a href="#psicologos" class="block w-full bg-slate-900 hover:bg-slate-800 text-white font-medium py-3 rounded-xl text-center text-sm transition">
+                                Agendar con un Profesional
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-serena-600 font-semibold text-sm uppercase tracking-wider">Proceso Transparente</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">¿Cómo funciona Serena Mente?</h2>
+                <p class="text-slate-600 mt-3">Un modelo ágil diseñado para garantizar tu comodidad, seguridad y acceso a una atención de primera calidad.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center">
+                    <span class="inline-block text-xs font-bold uppercase tracking-wider text-serena-700 bg-serena-100 px-3 py-1 rounded-full mb-3">Paso 1</span>
+                    <h3 class="font-bold text-slate-800 mb-2">Elige a tu Psicólogo</h3>
+                    <p class="text-sm text-slate-600">Revisa las especialidades y selecciona al profesional que mejor se adapte a tu momento actual.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center">
+                    <span class="inline-block text-xs font-bold uppercase tracking-wider text-serena-700 bg-serena-100 px-3 py-1 rounded-full mb-3">Paso 2</span>
+                    <h3 class="font-bold text-slate-800 mb-2">Realiza el Pago Previo</h3>
+                    <p class="text-sm text-slate-600">Selecciona tu consulta o paquete (Tarifa única $80.000 COP) y sube tu comprobante de pago.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center">
+                    <span class="inline-block text-xs font-bold uppercase tracking-wider text-serena-700 bg-serena-100 px-3 py-1 rounded-full mb-3">Paso 3</span>
+                    <h3 class="font-bold text-slate-800 mb-2">Conéctate por Meet</h3>
+                    <p class="text-sm text-slate-600">Recibe tu enlace de Google Meet confirmado tras la validación para tu sesión virtual.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center">
+                    <span class="inline-block text-xs font-bold uppercase tracking-wider text-serena-700 bg-serena-100 px-3 py-1 rounded-full mb-3">Paso 4</span>
+                    <h3 class="font-bold text-slate-800 mb-2">Valora el Servicio</h3>
+                    <p class="text-sm text-slate-600">Al terminar, califica la atención de tu psicólogo y comparte tu reseña en la plataforma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="psicologos" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-serena-600 font-semibold text-sm uppercase tracking-wider">Equipo Clínico y Organizacional</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">Nuestros Especialistas</h2>
+                <p class="text-slate-600 mt-3">Profesionales calificados listos para brindarte orientación experta. Tarifa de consulta individual: $80.000 COP.</p>
+            </div>
+
+            <div id="psychologists-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </div>
+    </section>
+
+    <section id="tarifas" class="py-16 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-serena-900 to-serena-700 text-white rounded-3xl p-8 lg:p-12 shadow-xl flex flex-col lg:flex-row items-center justify-between">
+                <div class="space-y-4 mb-6 lg:mb-0 max-w-2xl">
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-xs font-semibold uppercase">Inversión Clara</span>
+                    <h2 class="text-3xl font-bold">Tarifas y Opciones de Paquetes</h2>
+                    <p class="text-slate-200 text-sm leading-relaxed">
+                        Cada consulta individual tiene un costo estándar de <strong class="text-white">$80.000 COP</strong>. También disponemos de paquetes de acompañamiento continuo (4 o 8 sesiones) con beneficios especiales. El pago previo es obligatorio para asegurar y agendar tu espacio en Google Meet.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
+                    <a href="#psicologos" class="bg-white text-serena-900 hover:bg-slate-100 font-bold px-6 py-3.5 rounded-xl text-center text-sm shadow-md transition">
+                        Agendar Sesión Ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Califica a tu Psicólogo</h3>
+                    <p class="text-sm text-slate-500 mb-6">Tu opinión nos ayuda a mantener la excelencia en la atención virtual.</p>
+                    <form id="review-form" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Selecciona al Profesional</label>
+                            <select id="review-psi" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-700 focus:outline-none focus:border-serena-600"></select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Tu Nombre</label>
+                            <input type="text" id="review-name" required placeholder="Ej. Camila Rodríguez" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-700 focus:outline-none focus:border-serena-600">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Puntaje de Atención (1 a 5)</label>
+                            <select id="review-rating" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-700 focus:outline-none focus:border-serena-600">
+                                <option value="5">5 - Excelente</option>
+                                <option value="4">4 - Muy bueno</option>
+                                <option value="3">3 - Bueno</option>
+                                <option value="2">2 - Regular</option>
+                                <option value="1">1 - Deficiente</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Comentario / Reseña</label>
+                            <textarea id="review-comment" required rows="3" placeholder="Cuéntanos cómo fue tu experiencia..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-700 focus:outline-none focus:border-serena-600"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-serena-600 hover:bg-serena-700 text-white font-medium py-3 rounded-xl transition text-sm shadow-md">
+                            Publicar Reseña
+                        </button>
+                    </form>
+                </div>
+
+                <div class="lg:col-span-2 space-y-6">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-2xl font-bold text-slate-900">Reseñas y Experiencias Recientes</h3>
+                        <span id="review-count-badge" class="bg-serena-100 text-serena-700 text-xs font-semibold px-3 py-1 rounded-full">0 Opiniones</span>
+                    </div>
+                    <div id="reviews-container" class="space-y-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="booking-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/50 backdrop-blur-sm hidden">
+        <div class="bg-white w-full max-w-lg rounded-3xl p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-500 hover:text-slate-800 text-xs font-bold uppercase tracking-wider bg-slate-100 px-3 py-1 rounded-lg">
+                Cerrar
+            </button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <div id="notification-toast" class="fixed bottom-5 right-5 z-50 bg-slate-900 text-white px-5 py-3 rounded-2xl shadow-xl flex items-center transform translate-y-24 opacity-0 transition-all duration-300">
+        <span id="toast-message" class="text-sm font-medium">Acción realizada con éxito</span>
+    </div>
+
+    <script>
+        const psychologists = [
+            {
+                id: 1,
+                name: "Psi. María Camila Jarma",
+                specialty: "Psicología Jurídica y Forense",
+                description: "Evaluación, asesoría y orientación especializada en contextos legales y forenses con rigurosidad ética.",
+                badge: "Forense",
+                price: 80000,
+                rating: 4.9,
+                reviewsCount: 18
+            },
+            {
+                id: 2,
+                name: "Psi. Alexander Sarmiento",
+                specialty: "Terapia Cognitivo-Conductual (TCC)",
+                description: "Atención especializada a niños (desde los 10 años) y adolescentes mediante herramientas efectivas.",
+                badge: "Niños y Adolescentes",
+                price: 80000,
+                rating: 5.0,
+                reviewsCount: 24
+            },
+            {
+                id: 3,
+                name: "Psi. Jesús Cervera",
+                specialty: "Terapia Cognitivo-Conductual (TCC)",
+                description: "Atención abierta a todo público, enfocada en la gestión de ansiedad, emociones y modificación conductual.",
+                badge: "Todo Público",
+                price: 80000,
+                rating: 4.8,
+                reviewsCount: 15
+            },
+            {
+                id: 4,
+                name: "Psi. Kenny Ariza",
+                specialty: "Terapia Cognitivo-Conductual (TCC)",
+                description: "Orientación psicológica integral para cualquier persona que busque superar desafíos mediante estrategias basadas en evidencia.",
+                badge: "Todo Público",
+                price: 80000,
+                rating: 4.9,
+                reviewsCount: 21
+            },
+            {
+                id: 5,
+                name: "Psi. María Fernanda Quintero",
+                specialty: "Psicología Organizacional",
+                description: "Orientación en desarrollo profesional, clima laboral, manejo del estrés ocupacional y habilidades de liderazgo.",
+                badge: "Organizacional",
+                price: 80000,
+                rating: 4.8,
+                reviewsCount: 12
+            },
+            {
+                id: 6,
+                name: "Psi. Angely Surmay",
+                specialty: "Psicología Organizacional",
+                description: "Bienestar en el entorno de trabajo, gestión de equipos, productividad saludable y resolución de conflictos laborales.",
+                badge: "Organizacional",
+                price: 80000,
+                rating: 4.9,
+                reviewsCount: 16
+            }
+        ];
+
+        let reviews = [
+            {
+                psiName: "Psi. Alexander Sarmiento",
+                userName: "Lucía Méndez",
+                rating: 5,
+                comment: "Excelente profesional con mi hijo de 12 años. Muy empático y con estrategias claras en TCC.",
+                date: "Hace 2 días"
+            },
+            {
+                psiName: "Psi. María Camila Jarma",
+                userName: "Carlos Andrés P.",
+                rating: 5,
+                comment: "Su orientación jurídica y forense fue sumamente clara y precisa para nuestro caso. Muy agradecido.",
+                date: "Hace 4 días"
+            },
+            {
+                psiName: "Psi. Kenny Ariza",
+                userName: "Valentina Gómez",
+                rating: 5,
+                comment: "Las sesiones online por Meet funcionaron perfecto y el pago previo fue muy rápido de validar.",
+                date: "Hace 1 semana"
+            }
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderPsychologists();
+            populateSelectOptions();
+            renderReviews();
+            setupReviewForm();
+        });
+
+        function renderPsychologists() {
+            const grid = document.getElementById('psychologists-grid');
+            grid.innerHTML = psychologists.map(p => `
+                <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-serena-50 text-serena-700 text-xs font-semibold px-3 py-1 rounded-full">${p.badge}</span>
+                            <span class="text-slate-600 text-xs font-semibold">Puntaje: ${p.rating}/5 (${p.reviewsCount})</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-1">${p.name}</h3>
+                        <p class="text-xs font-semibold text-serena-600 mb-3">${p.specialty}</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">${p.description}</p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Consulta individual</span>
+                            <span class="text-base font-extrabold text-slate-900">$${p.price.toLocaleString()} COP</span>
+                        </div>
+                        <button onclick="openBookingModal(${p.id})" class="bg-serena-600 hover:bg-serena-700 text-white font-medium px-4 py-2.5 rounded-xl text-sm transition shadow-sm">
+                            Agendar Cita
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function populateSelectOptions() {
+            const select = document.getElementById('review-psi');
+            select.innerHTML = psychologists.map(p => `<option value="${p.name}">${p.name} (${p.specialty})</option>`).join('');
+        }
+
+        function openBookingModal(psiId) {
+            const psi = psychologists.find(p => p.id === psiId);
+            const modal = document.getElementById('booking-modal');
+            const content = document.getElementById('modal-content');
+
+            content.innerHTML = `
+                <div class="mb-6">
+                    <span class="bg-serena-100 text-serena-700 text-xs font-semibold px-3 py-1 rounded-full">Reserva Virtual</span>
+                    <h3 class="text-2xl font-bold text-slate-900 mt-2">Agendar con ${psi.name}</h3>
+                    <p class="text-xs text-slate-500 mt-1">${psi.specialty}</p>
+                </div>
+                <form id="booking-form" onsubmit="submitBooking(event, '${psi.name}')" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Nombre Completo</label>
+                        <input type="text" id="book-name" required placeholder="Tu nombre y apellido" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-serena-600">
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Correo Electrónico</label>
+                            <input type="email" id="book-email" required placeholder="correo@ejemplo.com" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-serena-600">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Teléfono / WhatsApp</label>
+                            <input type="tel" id="book-phone" required placeholder="300 123 4567" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-serena-600">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Fecha Preferida</label>
+                            <input type="date" id="book-date" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-serena-600">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Hora Preferida</label>
+                            <select id="book-time" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-serena-600">
+                                <option value="09:00 AM">09:00 AM</option>
+                                <option value="11:00 AM">11:00 AM</option>
+                                <option value="03:00 PM">03:00 PM</option>
+                                <option value="05:00 PM">05:00 PM</option>
+                                <option value="07:00 PM">07:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Tipo de Servicio y Tarifa</label>
+                        <select id="book-type" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-serena-600">
+                            <option value="Consulta Individual">Consulta Individual - $80.000 COP</option>
+                            <option value="Paquete de 4 Sesiones">Paquete de 4 Sesiones</option>
+                            <option value="Paquete de 8 Sesiones">Paquete de 8 Sesiones</option>
+                        </select>
+                    </div>
+
+                    <div class="p-4 bg-amber-50 border border-amber-200 rounded-2xl text-xs space-y-2">
+                        <div class="font-bold text-amber-900">
+                            <span>Requisito de Pago Previo</span>
+                        </div>
+                        <p class="text-amber-800">Para confirmar tu cita, realiza la transferencia por valor de <strong>$80.000 COP</strong> a Nequi / Daviplata al <strong>300 000 0000</strong>. Tras enviar tu comprobante, el enlace de Google Meet será habilitado.</p>
+                    </div>
+
+                    <button type="submit" class="w-full bg-serena-600 hover:bg-serena-700 text-white font-medium py-3.5 rounded-xl transition text-sm shadow-md">
+                        Confirmar Reserva y Ver Instrucciones de Pago
+                    </button>
+                </form>
+            `;
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('booking-modal').classList.add('hidden');
+        }
+
+        function submitBooking(event, psiName) {
+            event.preventDefault();
+            const name = document.getElementById('book-name').value;
+            const date = document.getElementById('book-date').value;
+            const time = document.getElementById('book-time').value;
+
+            const modalContent = document.getElementById('modal-content');
+            modalContent.innerHTML = `
+                <div class="text-center space-y-4 py-6">
+                    <span class="inline-block bg-serena-100 text-serena-700 text-xs font-bold px-4 py-1.5 rounded-full uppercase">Confirmado</span>
+                    <h3 class="text-2xl font-bold text-slate-900">Reserva Registrada, ${name}</h3>
+                    <p class="text-sm text-slate-600 max-w-sm mx-auto">
+                        Has agendado tu sesión virtual con <strong>${psiName}</strong> para el día <strong>${date}</strong> a las <strong>${time}</strong>.
+                    </p>
+                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-left space-y-2 text-xs">
+                        <p class="font-bold text-slate-800">Siguientes pasos:</p>
+                        <p class="text-slate-600">1. Realiza el pago previo de $80.000 COP vía Nequi/Daviplata.</p>
+                        <p class="text-slate-600">2. Envía tu comprobante por WhatsApp o correo.</p>
+                        <p class="text-slate-600">3. Recibirás tu enlace de <strong>Google Meet</strong>.</p>
+                    </div>
+                    <button onclick="closeModal()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-medium py-3 rounded-xl transition text-sm">
+                        Entendido y Cerrar
+                    </button>
+                </div>
+            `;
+            showToast("Cita reservada correctamente");
+        }
+
+        function setupReviewForm() {
+            document.getElementById('review-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const psiName = document.getElementById('review-psi').value;
+                const userName = document.getElementById('review-name').value;
+                const rating = parseInt(document.getElementById('review-rating').value);
+                const comment = document.getElementById('review-comment').value;
+
+                const newReview = {
+                    psiName,
+                    userName,
+                    rating,
+                    comment,
+                    date: "Justo ahora"
+                };
+
+                reviews.unshift(newReview);
+                renderReviews();
+                document.getElementById('review-form').reset();
+                showToast("Reseña publicada con éxito");
+            });
+        }
+
+        function renderReviews() {
+            const container = document.getElementById('reviews-container');
+            const badge = document.getElementById('review-count-badge');
+            badge.innerText = `${reviews.length} Opiniones`;
+
+            container.innerHTML = reviews.map(r => `
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 space-y-2">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="font-bold text-slate-900">${r.userName}</span>
+                            <span class="text-xs text-slate-400 ml-2">sobre <strong class="text-serena-600">${r.psiName}</strong></span>
+                        </div>
+                        <div class="text-serena-700 bg-serena-50 px-2.5 py-1 rounded-md text-xs font-bold">
+                            Puntaje: ${r.rating}/5
+                        </div>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed">${r.comment}</p>
+                    <span class="text-xs text-slate-400 block pt-1">${r.date}</span>
+                </div>
+            `).join('');
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('notification-toast');
+            document.getElementById('toast-message').innerText = msg;
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 4000);
+        }
+    </script>
+
+    <footer class="bg-slate-900 border-t border-slate-800 text-center py-6 px-4 mt-8 text-slate-400 space-y-2">
+        <p>
+            <a href="legal.html" class="text-emerald-400 hover:underline text-sm font-medium">
+                Términos y Condiciones
+            </a>
+        </p>
+        <p class="text-xs text-slate-500">
+            &copy; 2026 Serena Mente - Plataforma de Orientación Psicológica Virtual. Todos los derechos reservados.
+        </p>
+    </footer>
+
+</body>
+</html>
